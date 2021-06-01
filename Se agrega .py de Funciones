@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Santiago317/AID-Tareas/blob/main/Se%20agrega%20.py%20de%20Funciones\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Fhz7xmRqtjtc"
+      },
+      "source": [
+        "#Declaracion de Funciones\n",
+        "\n",
+        "#Funcion sin parametros\n",
+        "def funcion1 ():\n",
+        "    #Contenido de la funcion\n",
+        "    print ('Haz llamado a la funcion 1')\n",
+        "\n",
+        "\n",
+        "#Funcion con parametros y retorno\n",
+        "def funcion2 (a,b):\n",
+        "    #Contenido de la funcion\n",
+        "    #Esto realiza la suma de esta función\n",
+        "    c= int (a) + int (b)\n",
+        "    return c"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Vl7Bd0t9tnzS"
+      },
+      "source": [
+        "#Llamamos las funciones declaradas en otro archivo\n",
+        "from FuncionesExternas import *\n",
+        "\n",
+        "#Invocamos las funciones\n",
+        "funcion1()\n",
+        "#Invocamos la otra funcion\n",
+        "Q = input ('Introduzca un dato: ')\n",
+        "W = input ('Introduzca otro dato: ')\n",
+        "print(funcion2 (Q, W) )"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
